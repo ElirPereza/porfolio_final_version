@@ -1,0 +1,8 @@
+# Normaliza finales de línea para todos los archivos de texto
+* text=auto
+# Excepciones específicas para ciertos tipos de archivos
+*.sh text eol=lf
+*.bat text eol=crlf
+.next/cache/webpack/server-production/*.pack filter=lfs diff=lfs merge=lfs -text
+.next/cache/webpack/client-production/*.pack filter=lfs diff=lfs merge=lfs -text
+node_modules/@next/swc-win32-x64-msvc/*.node filter=lfs diff=lfs merge=lfs -text

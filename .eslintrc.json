@@ -1,0 +1,7 @@
+{
+  "extends": "next/core-web-vitals",
+  "rules": {
+    "react/react-in-jsx-scope": "off", // Example: Disable the 'react/react-in-jsx-scope' rule
+    "no-console": "warn" // Example: Change the severity of 'no-console' to 'warn'
+  }
+}
