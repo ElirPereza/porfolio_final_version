@@ -12,8 +12,8 @@ const personalDetails = [
 ];
 const DataAbout = () => {
     return (
-        <div className="">
-            <div className=''>
+        <div className="w-full h-full">
+            <div >
                 {personalDetails.map((detail, index) => (
                     <div
                         key={index}

@@ -5,12 +5,12 @@ import { SiJavascript, SiTypescript } from 'react-icons/si'
 
 const Ability = () => {
     return (
-        <div className='m-5'>
+        <div className='m-5 '>
             <h2 className="flex justify-start text-xl font-bold">Skills</h2>
 
             <div className="max-w-md mx-auto pt-5 items-center">
 
-                <div className="flex gap-7 mb-4">
+                <div className="sm:flex sm:gap-7 sm:mb-4 flex gap-3 justify-center">
                     <div className="flex flex-col items-center">
                         <Tooltip
                             content={
@@ -23,9 +23,9 @@ const Ability = () => {
                                 </div>
                             }
                         >
-                            <div className="w-20 h-20  rounded-full"><FaHtml5 color="orange" className="w-full h-full" /></div>
+                            <div className="sm:w-20 sm:h-20 w-16 h-16  rounded-full"><FaHtml5 color="orange" className="w-full h-full" /></div>
                         </Tooltip>
-                        <span>Max Lvl</span>
+                        <span className='font-bold'>Max Lvl</span>
                     </div>
                     <div className="flex flex-col items-center">
                         <Tooltip
@@ -36,9 +36,9 @@ const Ability = () => {
                                 </div>
                             }
                         >
-                            <div className="w-20 h-20 rounded-full"><FaCss3Alt color="blue" className="w-full h-full" /></div>
+                            <div className="sm:w-20 sm:h-20 w-16 h-16 rounded-full"><FaCss3Alt color="blue" className="w-full h-full" /></div>
                         </Tooltip>
-                        <span>Max Lvl</span>
+                        <span className='font-bold'>Max Lvl</span>
                     </div>
                     <div className="flex flex-col items-center">
                         <Tooltip
@@ -49,9 +49,9 @@ const Ability = () => {
                                 </div>
                             }
                         >
-                            <div className="w-20 h-20  rounded-full "><SiTypescript color="#0E46A3" className="w-full h-full rounded-medium" /></div>
+                            <div className="sm:w-20 sm:h-20 w-16 h-16  rounded-full "><SiTypescript color="#0E46A3" className="w-full h-full rounded-medium" /></div>
                         </Tooltip>
-                        <span>lvl 4/5</span>
+                        <span  className='font-bold'>lvl 4/5</span>
                     </div>
                     <div className="flex flex-col items-center">
                         <Tooltip
@@ -62,13 +62,13 @@ const Ability = () => {
                                 </div>
                             }
                         >
-                            <div className="w-20 h-20  rounded-full"> <SiJavascript color="yellow" className="w-full h-full rounded-medium" /></div>
+                            <div className="sm:w-20 sm:h-20 w-16 h-16  rounded-full"> <SiJavascript color="yellow" className="w-full h-full rounded-medium" /></div>
                         </Tooltip>
-                        <span>lvl 4/5</span>
+                        <span  className='font-bold'>lvl 4/5</span>
                     </div>
                 </div>
 
-                <div className="flex gap-5 justify-center">
+                <div className="sm:flex sm:gap-5 sm:justify-center justify-center gap-3 p-3 flex">
                     <div className="flex flex-col items-center">
                         <Tooltip
                             content={
@@ -78,9 +78,9 @@ const Ability = () => {
                                 </div>
                             }
                         >
-                            <div className="w-20 h-20  rounded-full "><FaReact color="#61DBFB" className="w-full h-full" /></div>
+                            <div className="sm:w-20 sm:h-20 w-16 h-16  rounded-full "><FaReact color="#61DBFB" className="w-full h-full" /></div>
                         </Tooltip>
-                        <span>lvl 4/5</span>
+                        <span  className='font-bold'>lvl 4/5</span>
                     </div>
                     <div className="flex flex-col items-center">
                         <Tooltip
@@ -91,7 +91,7 @@ const Ability = () => {
                                 </div>
                             }
                         >
-                            <div className="w-20 h-20  rounded-full"><FaNodeJs color="#7ABA78" className="w-full h-full" /></div>
+                            <div className="sm:w-20 sm:h-20 w-16 h-16  rounded-full"><FaNodeJs color="#7ABA78" className="w-full h-full" /></div>
                         </Tooltip>
                         <span>lvl 4/5</span>
                     </div>
@@ -104,7 +104,7 @@ const Ability = () => {
                                 </div>
                             }
                         >
-                            <div className="w-20 h-20  rounded-full"><FaGitAlt color="orange" className="w-full h-full" /></div>
+                            <div className="sm:w-20 sm:h-20 w-16 h-16  rounded-full"><FaGitAlt color="orange" className="w-full h-full" /></div>
                         </Tooltip>
                         <span>lvl 4/5</span>
                     </div>

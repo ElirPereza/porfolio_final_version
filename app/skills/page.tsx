@@ -6,10 +6,10 @@ import Image from "next/image";
 
 export default function SkillPage() {
 	return (
-		<section className="absolute inset-5 flex items-center justify-center md:p-10  animate-fade-left">
-			<div className="flex items-center justify-center w-full h-full relative">
+		<section className="absolute inset-5 flex items-center justify-center md:p-10 animate-fade-left">
+			<div className="sm:flex items-center justify-center w-full h-full ">
 
-				<div className="flex-col w-2/6">
+				<div className=" sm:flex-col sm:w-2/6 ">
 					<div className='flex h-full text-white '>
 						<Pj />
 					</div>
@@ -18,18 +18,20 @@ export default function SkillPage() {
 						<Stats />
 					</div>
 
-					<div className="text-white">
+					<div className="text-white ">
 						<Ability />
 					</div>
 				</div>
 
-				<div className="relative flex h-full w-2/6 justify-center items-center">
-					<Image src="/card_stats.jpg" className="recortar-imagen" width={415} height={140} alt="Card Stats" />
-					<div className="absolute inset-0 contrast-200" style={{
-						backgroundImage: "url('frame.png')",
-						backgroundPosition: 'center',
-						backgroundSize: '146%'
-					}} />
+				<div className="sm:mt-0 sm:w-auto sm:block hidden cut">
+					<Image
+						src="/pjframe.png"
+						width={400}
+						height={400}
+						style={{ objectFit: "contain" }}
+						alt="Frame"
+						className="sm:w-auto sm:h-auto w-full h-full "
+					/>
 				</div>
 			</div>
 		</section>
