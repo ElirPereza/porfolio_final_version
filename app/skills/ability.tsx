@@ -93,7 +93,7 @@ const Ability = () => {
                         >
                             <div className="sm:w-20 sm:h-20 w-16 h-16  rounded-full"><FaNodeJs color="#7ABA78" className="w-full h-full" /></div>
                         </Tooltip>
-                        <span>lvl 4/5</span>
+                        <span className='font-bold'>lvl 4/5</span>
                     </div>
                     <div className="flex flex-col items-center">
                         <Tooltip
@@ -106,7 +106,7 @@ const Ability = () => {
                         >
                             <div className="sm:w-20 sm:h-20 w-16 h-16  rounded-full"><FaGitAlt color="orange" className="w-full h-full" /></div>
                         </Tooltip>
-                        <span>lvl 4/5</span>
+                        <span className='font-bold'>lvl 4/5</span>
                     </div>
                 </div>
 
