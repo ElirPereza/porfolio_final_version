@@ -9,7 +9,7 @@ export default function ContactPage() {
 
 			<div className="flex gap-10 items-center justify-center w-full h-full relative">
 
-				<Card className="w-2/6 h-full ">
+				<Card className="w-2/6 h-full hidden sm:block ">
 					<figure >
 						<iframe
 							src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62667.48133567827!2d-74.85917471551419!3d10.98467658924206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8ef42d44d12ae605%3A0x2633844581b917b2!2sBarranquilla%2C%20Atl%C3%A1ntico!5e0!3m2!1ses!2sco!4v1718217933638!5m2!1ses!2sco"
@@ -17,7 +17,7 @@ export default function ContactPage() {
 					</figure>
 				</Card>
 
-				<div className="flex-col w-2/6">
+				<div className="flex-col sm:w-2/6 w-full">
 
 					<h1 className={title({ size: 'md', color: "pink" })}>Contact Me</h1>
 

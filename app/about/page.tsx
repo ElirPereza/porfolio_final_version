@@ -7,7 +7,7 @@ export default function AboutPage() {
 	return (
 
 		<div className="absolute inset-5 flex sm:items-center sm:justify-center animate-fade-right ">
-			<div className="flex sm:flex-row flex-col items-center justify-center w-full h-full sm:gap-20 overflow-scroll sm:overflow-hidden ">
+			<div className="flex sm:flex-row flex-col items-center justify-center w-full h-full sm:gap-20 overflow-auto ">
 
 				<div className="sm:mt-0 sm:w-auto w-56 mt-96 cut">
 					<Image

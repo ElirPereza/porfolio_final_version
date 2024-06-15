@@ -7,7 +7,7 @@ import Image from "next/image";
 export default function SkillPage() {
 	return (
 		<section className="absolute inset-5 flex items-center justify-center md:p-10 animate-fade-left">
-			<div className="sm:flex items-center justify-center w-full h-full ">
+			<div className="sm:flex items-center justify-center w-full h-full sm:gap-20 ">
 
 				<div className=" sm:flex-col sm:w-2/6 ">
 					<div className='flex h-full text-white '>

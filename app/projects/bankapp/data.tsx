@@ -4,7 +4,7 @@ import Carousel from "@/components/carousel";
 import Image from "next/image";
 import { GithubIcon, Vlogo } from "@/components/icons";
 
-export default function DataCrud() {
+export default function DataBnk() {
     const { isOpen, onOpen, onOpenChange } = useDisclosure();
 
     return (
@@ -71,4 +71,3 @@ export default function DataCrud() {
         </>
     );
 }
-

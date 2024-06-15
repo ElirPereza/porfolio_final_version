@@ -2,7 +2,7 @@ import { Link } from "@nextui-org/link";
 import { button as buttonStyles } from "@nextui-org/theme";
 import { siteConfig } from "@/components/others/site";
 import { title, subtitle } from "@/components/others/primitives";
-import { GithubIcon } from "@/components/icons";
+import { GithubIcon, LinkedinLogo, PaperPdf } from "@/components/icons";
 import { Textarea } from "@nextui-org/input";
 
 export default function Home() {
@@ -21,7 +21,7 @@ export default function Home() {
 				</h2>
 			</div>
 
-			<div className="flex ">
+			<div className="flex gap-2 ">
 				<Link
 					isExternal
 					className={buttonStyles({ variant: "solid", radius: "full", color: "primary" })}
@@ -30,9 +30,25 @@ export default function Home() {
 					<GithubIcon size={20} />
 					GitHub
 				</Link>
+				<Link
+					isExternal
+					className={buttonStyles({ variant: "solid", radius: "full", color: "primary" })}
+					href={"#"}
+				>
+					<LinkedinLogo size={20} />
+					Linkedin
+				</Link>
+				<Link
+					isExternal
+					className={buttonStyles({ variant: "solid", radius: "full", color: "primary" })}
+					href={"#"}
+				>
+					<PaperPdf size={20} />
+					Resume
+				</Link>
 			</div>
 
-			<div className="mt-10 flex w-[40%] h-[30%] text-4xl ">
+			<div className="sm:mt-10 sm:flex sm:w-[40%] sm:h-[30%] text-4xl ">
 				<Textarea
 					label="Come back when you finish watching and leave a comment"
 					placeholder="Enter your description"

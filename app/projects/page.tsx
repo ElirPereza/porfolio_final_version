@@ -1,13 +1,19 @@
 'use client'
 import { title } from "@/components/others/primitives";
 import Cards from "./card";
-import Carousel from "@/components/carousel";
 export default function ProjectPage() {
 
 	return (
-		<div className=" flex flex-col h-full justify-center items-center ">
-			<h1 className={title({color:"cyan"})}>Projects</h1>
-			<Cards/>
+
+		<div className="m-4 sm:overflow-hidden overflow-auto h-screen pb-40">
+			<div className="">
+				<h1 className={title({ color: "cyan", size: "md", className: "" })}>Projects</h1>
+			</div>
+			<div className="">
+				<Cards />
+			</div>
 		</div>
+
+
 	);
 }
