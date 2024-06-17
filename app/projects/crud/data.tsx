@@ -33,16 +33,16 @@ export default function DataCrud() {
                                         <div className="sm:w-1/2 p-2 items-start">
                                             <div className="flex gap-3">
                                                 <Chip color="warning" variant="faded">
-                                                    <Link href={''} className="flex items-center gap-2" >
+                                                    <Link href={'https://crud-app-zeta-ashy.vercel.app/'} className="flex items-center gap-2" >
                                                         <Vlogo width={10} height={10} />
                                                         View Deploy
                                                     </Link>
                                                 </Chip>
                                                 <Chip color="warning" variant="faded">
-                                                    <div className="flex items-center gap-2">
+                                                    <Link href={'https://github.com/ElirPereza/Crud-App.git'} className="flex items-center gap-2">
                                                         <GithubIcon width={10} height={10} />
                                                         View Code
-                                                    </div>
+                                                    </Link>
                                                 </Chip>
                                             </div>
 
