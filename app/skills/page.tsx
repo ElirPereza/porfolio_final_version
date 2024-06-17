@@ -7,9 +7,9 @@ import Image from "next/image";
 export default function SkillPage() {
 	return (
 		<section className="absolute inset-5 flex items-center justify-center md:p-10 animate-fade-left">
-			<div className="sm:flex items-center justify-center w-full h-full sm:gap-20 ">
+			<div className="lg:flex items-center justify-center w-full h-full lg:gap-20 ">
 
-				<div className=" sm:flex-col sm:w-2/6 ">
+				<div className=" lg:flex-col lg:w-2/6 ">
 					<div className='flex h-full text-white '>
 						<Pj />
 					</div>
@@ -23,14 +23,14 @@ export default function SkillPage() {
 					</div>
 				</div>
 
-				<div className="sm:mt-0 sm:w-auto sm:block hidden cut">
+				<div className="mt-24 hidden lg:block lg:mt-0 lg:w-auto w-56 sm:pt-0 lg:pt-0 pt-44 cut">
 					<Image
 						src="/pjframe.png"
 						width={400}
 						height={400}
 						style={{ objectFit: "contain" }}
 						alt="Frame"
-						className="sm:w-auto sm:h-auto w-full h-full "
+						className="lg:w-auto lg:h-auto w-full h-full  "
 					/>
 				</div>
 			</div>

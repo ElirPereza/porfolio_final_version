@@ -1,5 +1,7 @@
 import * as React from "react";
 import type { IconSvgProps } from "@/components/others/svgtype";
+import Image, { ImageProps } from "next/image";
+
 
 export const Logo: React.FC<IconSvgProps> = ({
     size = 36,
@@ -229,6 +231,22 @@ export const PaperPdf: React.FC<IconSvgProps> = ({
             fill="currentColor" />
     </svg>
 );
+
+// export const MeImg: React.FC<ImageProps> = ({
+//     width,
+//     height,
+//     ...props
+// }: ImageProps) => (
+//     <Image 
+//     src={'pjdrame.png'} 
+//     alt="notfound" 
+//     width={width}
+//     height={height}
+
+//     />
+// );
+
+
 
 
 

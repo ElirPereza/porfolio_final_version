@@ -36,17 +36,17 @@ const DataProjects: Project[] = [
 
 const Cards = () => {
     return (
-        <div className="sm:flex  sm:flex-row sm:flex-wrap flex-col m-6 justify-center">
+        <div className=" flex-row flex-wrap flex m-6 justify-center">
             {DataProjects.map((project, index) => (
                 <NextUiCard
                     key={index}
                     isFooterBlurred
                     radius="lg"
-                    className="min-h-fit m-4"
+                    className=" m-4 "
                 >
                     <Image
                         alt={project.name}
-                        className="object-cover item-center justify-center"
+                        className="object-cover min-w-full item-center justify-center"
                         height={300}
                         src={"https://nextui.org/images/hero-card.jpeg"}
                         width={300}

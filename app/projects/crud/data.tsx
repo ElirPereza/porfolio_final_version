@@ -13,7 +13,7 @@ export default function DataCrud() {
                 onPress={onOpen}>
                 Details
             </Button>
-            <Modal size="5xl"  isOpen={isOpen} onOpenChange={onOpenChange}>
+            <Modal size="5xl"  isOpen={isOpen} onOpenChange={onOpenChange} className="dark text-white">
                 <ModalContent>
                     {(onClose) => (
                         <>

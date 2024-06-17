@@ -6,6 +6,8 @@ import { fontSans } from "@/components/others/fonts";
 import clsx from "clsx";
 import { Navbar } from "@/components/navbar";
 import { Card } from "@nextui-org/react";
+import { useEffect } from "react";
+import { useTheme } from "next-themes";
 
 
 export const metadata: Metadata = {
@@ -19,31 +21,27 @@ export const metadata: Metadata = {
   },
 };
 
-export const viewport: Viewport = {
-  themeColor: [
-    { media: "(prefers-color-scheme: light)", color: "white" },
-    { media: "(prefers-color-scheme: dark)", color: "black" },
-  ],
-}
-
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+
+
+  
+
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={clsx(
-        "min-h-screen bg-background font-sans antialiased",
         fontSans.variable
       )}>
+      <Providers >
 
-        <Providers themeProps={{ children, attribute: "class", defaultTheme: "dark" }}>
 
-          <div className="relative flex flex-col h-screen ">
+          <div className="relative flex flex-col h-screen  ">
 
             <Navbar />
-            <Card className="container mx-auto min-w-[90%] h-full border border-white" style={{ backgroundImage: 'url("space.jpg")', backgroundSize: 'cover', backgroundPosition: 'center' }}>
+            <Card className="container mx-auto min-w-[90%] h-full border border-white "   style={{ backgroundImage: 'url("space.jpg")', backgroundSize: 'cover', backgroundPosition: 'center' }}>
               {children}
             </Card>
 
@@ -54,8 +52,8 @@ export default function RootLayout({
 
           </div>
 
-        </Providers>
 
+        </Providers>
       </body>
     </html>
   );
