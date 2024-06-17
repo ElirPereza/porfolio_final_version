@@ -3,7 +3,6 @@ import { Modal, ModalContent, ModalHeader, ModalBody, ModalFooter, Button, useDi
 import Carousel from "@/components/carousel";
 import Image from "next/image";
 import { GithubIcon, Vlogo } from "@/components/icons";
-import { IconBase } from "react-icons";
 import { ExpressIcon, MongoIcon, Nextjs, NodeIcon, ReactHookForm, ReactIcon, ReactQuery, ShadcnIcon, TailwindIcon, TypescriptIcon, ZustandIcon } from "@/components/tecnoicons";
 import Link from "next/link";
 
@@ -33,13 +32,13 @@ export default function DataCrud() {
                                         <div className="sm:w-1/2 p-2 items-start">
                                             <div className="flex gap-3">
                                                 <Chip color="warning" variant="faded">
-                                                    <Link href={'https://crud-app-zeta-ashy.vercel.app/'} className="flex items-center gap-2" >
+                                                    <Link href={'https://crud-app-zeta-ashy.vercel.app/'} target="_blank" className="flex items-center gap-2" >
                                                         <Vlogo width={10} height={10} />
                                                         View Deploy
                                                     </Link>
                                                 </Chip>
                                                 <Chip color="warning" variant="faded">
-                                                    <Link href={'https://github.com/ElirPereza/Crud-App.git'} className="flex items-center gap-2">
+                                                    <Link href={'https://github.com/ElirPereza/Crud-App.git'} target="_blank" className="flex items-center gap-2">
                                                         <GithubIcon width={10} height={10} />
                                                         View Code
                                                     </Link>
