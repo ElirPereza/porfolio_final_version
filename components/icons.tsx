@@ -12,8 +12,8 @@ export const Logo: React.FC<IconSvgProps> = ({
     <svg
         fill="none"
         height={size || height}
-        viewBox="0 0 32 32"
         width={size || width}
+        viewBox="0 0 32 32"
         {...props}
     >
         <path
@@ -232,19 +232,6 @@ export const PaperPdf: React.FC<IconSvgProps> = ({
     </svg>
 );
 
-// export const MeImg: React.FC<ImageProps> = ({
-//     width,
-//     height,
-//     ...props
-// }: ImageProps) => (
-//     <Image 
-//     src={'pjdrame.png'} 
-//     alt="notfound" 
-//     width={width}
-//     height={height}
-
-//     />
-// );
 
 
 

@@ -3,6 +3,9 @@ import { Modal, ModalContent, ModalHeader, ModalBody, ModalFooter, Button, useDi
 import Carousel from "@/components/carousel";
 import Image from "next/image";
 import { GithubIcon, Vlogo } from "@/components/icons";
+import { IconBase } from "react-icons";
+import { ExpressIcon, MongoIcon, Nextjs, NodeIcon, ReactHookForm, ReactIcon, ReactQuery, ShadcnIcon, TailwindIcon, TypescriptIcon, ZustandIcon } from "@/components/tecnoicons";
+import Link from "next/link";
 
 export default function DataCrud() {
     const { isOpen, onOpen, onOpenChange } = useDisclosure();
@@ -13,7 +16,7 @@ export default function DataCrud() {
                 onPress={onOpen}>
                 Details
             </Button>
-            <Modal size="5xl"  isOpen={isOpen} onOpenChange={onOpenChange} className="dark text-white">
+            <Modal size="5xl" isOpen={isOpen} onOpenChange={onOpenChange} className="dark text-white">
                 <ModalContent>
                     {(onClose) => (
                         <>
@@ -30,10 +33,10 @@ export default function DataCrud() {
                                         <div className="sm:w-1/2 p-2 items-start">
                                             <div className="flex gap-3">
                                                 <Chip color="warning" variant="faded">
-                                                    <div className="flex items-center gap-2" >
+                                                    <Link href={''} className="flex items-center gap-2" >
                                                         <Vlogo width={10} height={10} />
                                                         View Deploy
-                                                    </div>
+                                                    </Link>
                                                 </Chip>
                                                 <Chip color="warning" variant="faded">
                                                     <div className="flex items-center gap-2">
@@ -45,12 +48,75 @@ export default function DataCrud() {
 
                                             <h1 className="py-1 text-lg font-bold">Technologies</h1>
 
-                                            <div className="flex-none sm:flex sm:gap-2 gap-1">
-                                                <Chip>1231s231</Chip>
-                                                <Chip>1231231</Chip>
-                                                <Chip>1231231</Chip>
-                                                <Chip>1231231</Chip>
-                                                <Chip>1231231</Chip>
+                                            <div className="gap-1 flex-wrap flex">
+                                                <Chip className="bg-[#3178C6]">
+                                                    <div className="flex gap-2 font-bold items-center">
+                                                        <TypescriptIcon width={8} height={8} />
+                                                        TypeScript
+                                                    </div>
+                                                </Chip>
+
+                                                <Chip className="bg-[#61DAFB]">
+                                                    <div className="flex gap-2 font-bold items-center">
+                                                        <ReactIcon width={8} height={8} />
+                                                        React
+                                                    </div>
+                                                </Chip>
+                                                <Chip className="bg-[#FF4154]">
+                                                    <div className="flex gap-2 font-bold items-center">
+                                                        <ReactQuery width={8} height={8} />
+                                                        React Query
+                                                    </div>
+                                                </Chip>
+                                                <Chip className="bg-[#EC5990]">
+                                                    <div className="flex gap-2 font-bold items-center">
+                                                        <ReactHookForm width={8} height={8} />
+                                                        React Hook Form
+                                                    </div>
+                                                </Chip>
+                                                <Chip className="bg-[#000000]">
+                                                    <div className="flex gap-2 font-bold items-center">
+                                                        <Nextjs width={8} height={8} className="bg-white rounded-full"/>
+                                                        Next JS
+                                                    </div>
+                                                </Chip>
+                                                <Chip className="bg-[#06B6D4]">
+                                                    <div className="flex gap-2 font-bold items-center">
+                                                        <TailwindIcon width={8} height={8} />
+                                                        Tailwind
+                                                    </div>
+                                                </Chip>
+                                                <Chip className="bg-[#5FA04E]">
+                                                    <div className="flex gap-2 font-bold items-center">
+                                                        <NodeIcon width={8} height={8} />
+                                                        Node
+                                                    </div>
+                                                </Chip>
+                                                <Chip className="bg-[#000000]">
+                                                    <div className="flex gap-2 font-bold items-center">
+                                                        <ExpressIcon width={8} height={8} className="bg-white rounded-xl" />
+                                                        Express
+                                                    </div>
+                                                </Chip>
+                                                <Chip className="bg-[#47A248]">
+                                                    <div className="flex gap-2 font-bold items-center">
+                                                        <MongoIcon width={8} height={8} />
+                                                        MondoDB
+                                                    </div>
+                                                </Chip>
+                                                <Chip className="bg-[#000000]">
+                                                    <div className="flex gap-2 font-bold items-center">
+                                                        <ShadcnIcon width={8} height={8} className="bg-white rounded-xl " />
+                                                        ShadCN
+                                                    </div>
+                                                </Chip>
+                                                <Chip className="bg-[#66459B]">
+                                                    <div className="flex gap-2 font-bold items-center">
+                                                        <ZustandIcon width={500} height={500} />
+                                                        Zustand
+                                                    </div>
+                                                </Chip>
+
                                             </div>
                                             <h1 className="pt-8 text-lg font-bold">Description</h1>
                                             <div className="p-2 text-justify">
