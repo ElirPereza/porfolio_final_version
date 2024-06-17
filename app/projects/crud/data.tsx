@@ -6,9 +6,15 @@ import { GithubIcon, Vlogo } from "@/components/icons";
 import { ExpressIcon, MongoIcon, Nextjs, NodeIcon, ReactHookForm, ReactIcon, ReactQuery, ShadcnIcon, TailwindIcon, TypescriptIcon, ZustandIcon } from "@/components/tecnoicons";
 import Link from "next/link";
 
+const images = [
+    '/screenshot_1.png',
+    '/screenshot_2.png',
+    '/screenshot_3.png',
+    '/screenshot_4.png',
+    '/screenshot_5.png'
+  ];
 export default function DataCrud() {
     const { isOpen, onOpen, onOpenChange } = useDisclosure();
-
     return (
         <>
             <Button className="text-tiny text-white bg-black/20" variant="flat" color="default" radius="lg" size="sm"
@@ -25,8 +31,9 @@ export default function DataCrud() {
                                 <div className="sm:flex-col">
                                     <div className="flex-col sm:flex sm:flex-row w-full sm:pb-5 gap-5 ">
 
-                                        <div className="sm:w-1/2 ">
-                                            <Carousel />
+                                        <div className="sm:w-1/2  flex items-center">
+                                            <Carousel images={images}/>
+
                                         </div>
 
                                         <div className="sm:w-1/2 p-2 items-start">

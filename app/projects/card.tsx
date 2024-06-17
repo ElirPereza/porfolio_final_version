@@ -1,6 +1,7 @@
 import { CardFooter, Button, Card as NextUiCard, Image } from '@nextui-org/react';
 import DataCrud from './crud/data';
 import { ReactNode } from 'react';
+import DataBnk from './bankapp/data';
 
 type Project = {
     name: string;
@@ -14,7 +15,7 @@ const DataProjects: Project[] = [
     },
     {
         name: "APP FINANCE MANAGEMENT MODEL",
-        DetailsSrc: "",
+        DetailsSrc: <DataBnk/>,
     },
     {
         name: "Coming Soon",
