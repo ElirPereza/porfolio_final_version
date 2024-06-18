@@ -28,7 +28,7 @@ const Carousel = ({images }:any) => {
 
   return (
     <Card className="relative w-full">
-      <div onClick={onOpen} className="overflow-hidden rounded-lg">
+      <div onClick={onOpen} className="overflow-hidden flex justify-center rounded-lg">
         <Image
           className="object-cover w-full h-64 md:h-80 transition-transform duration-500 transform"
           src={images[currentImageIndex]}
