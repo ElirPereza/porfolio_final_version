@@ -5,7 +5,7 @@ export default function ProjectPage() {
 
 	return (
 
-		<div className="m-4 overflow-auto h-screen pb-40">
+		<div className="m-4 lg:overflow-hidden overflow-auto h-screen pb-40">
 			<div className="">
 				<h1 className={title({ color: "cyan", size: "md", className: "" })}>Projects</h1>
 			</div>

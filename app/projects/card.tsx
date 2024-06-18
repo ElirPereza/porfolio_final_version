@@ -47,7 +47,7 @@ const Cards = () => {
                 >
                     <Image
                         alt={project.name}
-                        className="object-cover min-w-full item-center justify-center"
+                        className={ project.name =="Coming Soon"? "object-cover min-w-full item-center justify-center blur-lg" :'object-cover min-w-full item-center justify-center' }
                         height={300}
                         src={"https://nextui.org/images/hero-card.jpeg"}
                         width={300}
