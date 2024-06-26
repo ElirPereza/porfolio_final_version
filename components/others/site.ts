@@ -50,5 +50,6 @@ export const siteConfig = {
 	links: {
 		github: "https://github.com/ElirPereza",
 		discord: "https://discord.com/users/328275994777747459",
+		linkedin: "https://www.linkedin.com/in/jesus-maldonado-maldonado-2603a7264/"
 	},
 };

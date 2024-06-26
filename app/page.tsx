@@ -33,7 +33,7 @@ export default function Home() {
 				<Link
 					isExternal
 					className={buttonStyles({ variant: "solid", radius: "full", color: "primary" })}
-					href={"#"}
+					href={siteConfig.links.linkedin}
 				>
 					<LinkedinLogo size={20} />
 					Linkedin
@@ -41,14 +41,15 @@ export default function Home() {
 				<Link
 					isExternal
 					className={buttonStyles({ variant: "solid", radius: "full", color: "primary" })}
-					href={"#"}
+					href="/resume.pdf"
+					download="my-CV.pdf"
 				>
 					<PaperPdf size={20} />
 					Resume
 				</Link>
 			</div>
 
-			<div className="sm:mt-10 sm:flex sm:w-[40%] sm:h-[30%] text-4xl ">
+			{/* <div className="sm:mt-10 sm:flex sm:w-[40%] sm:h-[30%] text-4xl ">
 				<Textarea
 					label="Come back when you finish watching and leave a comment"
 					placeholder="Enter your description"
@@ -56,7 +57,7 @@ export default function Home() {
 					variant="flat"
 					
 				/>
-			</div>
+			</div> */}
 
 		</section>
 	);

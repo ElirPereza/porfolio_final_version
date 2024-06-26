@@ -13,12 +13,12 @@ const Ability = () => {
                 <div className="sm:flex sm:gap-7 sm:mb-4 flex gap-3 justify-center">
                     <div className="flex flex-col items-center">
                         <Tooltip
+                            className='dark'
                             content={
-                                <div className="max-w-xs px-2 py-3  rounded-2xl text-justify">
+                                <div className="max-w-xs px-2 py-3  rounded-2xl text-justify ">
                                     <div className="text-base font-bold">HTML Constructer</div>
                                     <p className="text-tiny leading-snug ">
-                                        Dominando la construcción de la estructura 
-                                        fundamental de las páginas web
+                                        Mastering the construction of the fundamental structure of web pages
                                     </p>
                                 </div>
                             }
@@ -29,10 +29,13 @@ const Ability = () => {
                     </div>
                     <div className="flex flex-col items-center">
                         <Tooltip
+                            className='dark'
                             content={
                                 <div className="max-w-xs px-2 py-3  rounded-2xl text-justify">
                                     <div className="text-small font-bold">CSS Stylist</div>
-                                    <div className="text-tiny ">Explorando las técnicas para dar estilo y diseño a las interfaces de usuario.</div>
+                                    <div className="text-tiny ">
+                                        Exploring techniques for styling and designing user interfaces.
+                                    </div>
                                 </div>
                             }
                         >
@@ -42,52 +45,64 @@ const Ability = () => {
                     </div>
                     <div className="flex flex-col items-center">
                         <Tooltip
+                            className='dark'
                             content={
                                 <div className="max-w-xs px-2 py-3  rounded-2xl text-justify">
                                     <div className="text-small font-bold">TypeScript Trailblazer</div>
-                                    <div className="text-tiny">Descubriendo el potencial de la tipificación estática y el desarrollo moderno en la web.</div>
+                                    <div className="text-tiny">
+                                        Discovering the potential of static typing and modern web development.
+                                    </div>
                                 </div>
                             }
                         >
                             <div className="sm:w-20 sm:h-20 w-16 h-16  rounded-full "><SiTypescript color="#0E46A3" className="w-full h-full rounded-medium" /></div>
                         </Tooltip>
-                        <span  className='font-bold'>lvl 4/5</span>
+                        <span className='font-bold'>lvl 4/5</span>
                     </div>
                     <div className="flex flex-col items-center">
                         <Tooltip
+                            className='dark'
                             content={
                                 <div className="max-w-xs px-2 py-3  rounded-2xl text-justify bg-dark">
                                     <div className="text-small font-bold">JavaScript Explorer</div>
-                                    <div className="text-tiny">Navegando a través de los conceptos básicos de programación frontend para crear interactividad y dinamismo en las páginas web</div>
+                                    <div className="text-tiny">
+                                        Navigating through the basics of frontend programming to create interactivity and dynamism in web pages.
+                                    </div>
                                 </div>
                             }
                         >
                             <div className="sm:w-20 sm:h-20 w-16 h-16  rounded-full"> <SiJavascript color="yellow" className="w-full h-full rounded-medium" /></div>
                         </Tooltip>
-                        <span  className='font-bold'>lvl 4/5</span>
+                        <span className='font-bold'>lvl 4/5</span>
                     </div>
                 </div>
 
                 <div className="sm:flex sm:gap-5 sm:justify-center justify-center gap-3 p-3 flex">
                     <div className="flex flex-col items-center">
                         <Tooltip
+                            className='dark'
                             content={
                                 <div className="max-w-xs px-2 py-3  rounded-2xl text-justify">
                                     <div className="text-small font-bold">React Mago</div>
-                                    <div className="text-tiny">Dominando el arte de React para conjurar interfaces de usuario interactivas y dinámicas.</div>
+                                    <div className="text-tiny">
+                                        Mastering the art of React to conjure interactive and dynamic user interfaces.
+                                    </div>
                                 </div>
                             }
                         >
                             <div className="sm:w-20 sm:h-20 w-16 h-16  rounded-full "><FaReact color="#61DBFB" className="w-full h-full" /></div>
                         </Tooltip>
-                        <span  className='font-bold'>lvl 4/5</span>
+                        <span className='font-bold'>lvl 4/5</span>
                     </div>
                     <div className="flex flex-col items-center">
                         <Tooltip
+                            className='dark'
                             content={
                                 <div className="max-w-xs px-2 py-3  rounded-2xl text-justify">
                                     <div className="text-small font-bold">Node.js Voyager</div>
-                                    <div className="text-tiny">Explorando el entorno de ejecución de Node.js para construir aplicaciones web escalables y de alto rendimiento en el lado del servidor.</div>
+                                    <div className="text-tiny">
+                                        Exploring the Node.js runtime environment to build scalable and high-performance web applications on the server side.
+                                    </div>
                                 </div>
                             }
                         >
@@ -97,10 +112,13 @@ const Ability = () => {
                     </div>
                     <div className="flex flex-col items-center">
                         <Tooltip
+                            className='dark'
                             content={
                                 <div className="max-w-xs px-2 py-3  rounded-2xl text-justify">
                                     <div className="text-small font-bold">GIT Custodio</div>
-                                    <div className="text-tiny">Protegiendo y salvaguardando los proyectos de desarrollo, velando por una colaboración armoniosa y manteniendo el orden de las versiones con diligencia utilizando Git.</div>
+                                    <div className="text-tiny">
+                                        Protecting and safeguarding development projects, ensuring harmonious collaboration, and diligently maintaining version control with Git.
+                                    </div>
                                 </div>
                             }
                         >
