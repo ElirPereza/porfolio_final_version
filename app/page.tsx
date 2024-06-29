@@ -41,7 +41,7 @@ export default function Home() {
 				<Link
 					isExternal
 					className={buttonStyles({ variant: "solid", radius: "full", color: "primary" })}
-					href="/resume.pdf"
+					href="/resume_maldonado.pdf"
 					download="my-CV.pdf"
 				>
 					<PaperPdf size={20} />
